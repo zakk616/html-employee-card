@@ -1,0 +1,19 @@
+/* .front-side {
+  width: 100%;
+  height: 212px;
+  background-image: url("../images/CardGoldenHF.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.back-side {
+  width: 100%;
+  height: 212px;
+  background-image: url("../images/CardGoldenHCB.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+

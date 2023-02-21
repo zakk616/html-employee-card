@@ -589,7 +589,7 @@
 
 .h0 {
   /* height: 841.89px; */
-  min-height: 841.89px;
+  /* min-height: 424px; */
 }
 
 .h1 {
@@ -598,7 +598,8 @@
 
 .w0 {
   /* width: 595.28px; */
-  width: 794px;
+  /* width: 794px; */
+  width: 331px;
 }
 
 .w1 {
