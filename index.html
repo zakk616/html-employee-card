@@ -24,23 +24,59 @@
         padding: 70px 0px 0px 20px;
         z-index: 1;
       }
-      .front-text{
-        margin-top: 20px;
+      .front-text {
+        margin-top: 40px;
+      }
+      .front-text div {
+        height: 18px;
+      }
+      .back-text div {
+        height: 15px;
+        text-indent: 0cap;
+        line-height: 9px;
       }
       .name {
-        font-weight: bold;
+        font-weight: 700;
       }
       .heading {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 9pt;
       }
-      .heading-value {
-        font-weight: 600;
+      .heading-back {
+        font-weight: 800;
+        color: #2a6691;
+        font-size: 10px;
+      }
+      .heading-value  {
+        font-weight: 700;
         font-size: 11px;
       }
-      .photo{
+      .value-back {
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .photo {
         height: 120px;
-        margin: 0px 10px 10px 0px;
+        margin-left: 20px;
+      }
+      .signs{
+        margin-top: 15px;
+      }
+      .sign
+      {
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+
+      .signer-name{
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 9px;
+      }
+
+      .col-sm-8{
+        padding: 0px 0px 0px 5px;
       }
     </style>
   </head>
@@ -175,29 +211,83 @@
           </div>
         </div>
       </div>
+
       <div id="pf1" class="pf w0 h0" data-page-no="1" style="font-size: 99%">
-      <div  id="background" style="z-index: -1;">
-        <img src="images/CardGoldenHF.png" style="width: 331px; height: 212px; ">
-      </div>
-      <div style="z-index: 1;">
-        <div class="row front-side">
-        <div class="col-sm-7">
-        <div class="front-text">
-          <div><span class="name">AYAZ UL HAQ</span></div>
-          <div><span class="heading">Reg #:</span><span class="heading-value">208/2016</span></div>
-          <div><span class="heading">L.C&#9;</span><span class="heading-value">05-Aug-2017</span></div>
-          <div><span class="heading">H.C&#9;</span><span class="heading-value">05-Aug-2019</span></div>
-          <div><span class="heading">CNIC&#9;</span><spa class="heading-value">5630201203753</span></div>
+
+        <div  id="background" style="z-index: -1;">
+          <img src="images/CardGoldenHF.png" style="width: 331px; height: 212px; ">
         </div>
+        <div style="z-index: 1;top: 0;position: absolute;">
+          <div class="row front-side">
+            <div class="col-sm-8">
+              <div class="front-text">
+                <div class="row">
+                  <div class="col-sm-12"><span class="name">AYAZ UL HAQ</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4" style="padding-right: 0px;">
+                    <div><span class="heading">Reg #:</span></div>
+                    <div><span class="heading">L.C&#9;</span></div>
+                    <div><span class="heading">H.C&#9;</span></div>
+                    <div><span class="heading">CNIC&#9;</span></div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div><span class="heading-value">208/2016</span></div>
+                    <div><span class="heading-value">05-Aug-2017</span></div>
+                    <div><span class="heading-value">05-Aug-2019</span></div>
+                    <div><span class="heading-value">56302-0120375-3</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <img class="photo" src="images/emp.jpg">
+            </div>
+          </div>
         </div>
-          <div class="col-sm-5">
-            <img class="photo" src="images/emp.jpg">
+        <div class="back-side" id="background">
+          <img src="images/CardGoldenHCB.jpg" style="width: 331px; height: 212px; opacity: 1;">
+        </div>
+        <div style="z-index: 1;top: 0;position: absolute; margin: 218px 20px 0px 15px;width: 90%;">
+          <div class="row back-side">
+            <div class="col-sm-7">
+              <div class="back-text">
+                <div class="heading-back">Father Name</div>
+                <div class="value-back">Taj Muhammad</div>
+                <div class="heading-back">Place Of Practice</div>
+                <div class="value-back">Quetta</div>
+                <div class="heading-back">Expiry Date</div>
+                <div class="value-back">31-Dec-2025</div>
+                <div class="heading-back">Office Address</div>
+                <div class="value-back">Abdul Aziz Law Associates Office No 02, 3rd Floor Baldia Plaza Meezan Chowk Quetta</div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="back-text">
+                <div><span class="heading-back">D.O.B</span></div>
+                <div><span class="value-back">07-Mar-1990</span></div>
+                <div><span class="heading-back">Phone No</span></div>
+                <div><span class="value-back">0333-8322367</span></div>
+                <div><span class="heading-back">Blood Group</span></div>
+                <div><span class="value-back">B+ve</span></div>
+                <div><span class="heading-back">Address</span></div>
+                <div><span class="value-back">Paind Khan Road near killi Saidan Quetta</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="row signs">
+            <div class="col-sm-4 sign"><img src="images/sign.jpg" style="height: 40px; width: 100%;">
+              <p class="signer-name">Adil Khalil<br>Secretary</p>
+            </div>
+            <div class="col-sm-4 sign"><img src="images/qr.png" style="height: 70px; width: 70px;">
+            </div>
+            <div class="col-sm-4 sign"><img src="images/sign2.png" style="height: 40px; width: 100%;">
+              <p class="signer-name">Qasim Ali Gajizai<br>Vice Chairman</p>
+            </div>
           </div>
         </div>
         
-        
-      </div>
-        <div class="back-side" id="background"></div>
+
       </div>
     </div>
 
@@ -237,20 +327,6 @@
       $("#btnDownload").click(function (e) {
         e.preventDefault();
         var element = document.getElementById("pf1").innerHTML;
-        //html2pdf(element);
-
-        //html2pdf().from(element).set(options).save();
-        //window.print();
-
-        // html2pdf().from(element).set(options).toPdf().get('pdf').then(function (pdf) {
-        // 	var totalPages = pdf.internal.getNumberOfPages();
-        // 	for (i = 1; i <= totalPages; i++) {
-        // 		pdf.setPage(i);
-        // 		pdf.setFontSize(40);
-        // 		pdf.setTextColor(150);
-        // 		pdf.text('Page ' + i + ' of ' + totalPages, pdf.internal.pageSize.getWidth() - 300, pdf.internal.pageSize.getHeight() - 90);
-        // 	}
-        // }).save();
 
         const options = {
           margin: 0,
@@ -271,28 +347,11 @@
           },
         };
 
-        html2pdf().from(element).set(options).save();
+        html2pdf().from(element).set(options).toPdf().get('pdf').then((pdf) => {
+				  window.open(pdf.output('bloburl'), '_blank');
+        });
 
-        // html2pdf()
-        // .from(element)
-        // .set(options)
-        // .toPdf()
-        // .get("pdf")
-        // .then(function (pdf) {
-        //   var totalPages = pdf.internal.getNumberOfPages();
-
-        //   for (let i = 1; i <= totalPages; i++) {
-        //     pdf.setPage(i);
-        //     pdf.setFontSize(10);
-        //     pdf.setTextColor(0);
-        //     pdf.text(
-        //       "Page " + i + " of " + totalPages,
-        //       pdf.internal.pageSize.getWidth() - 1,
-        //       pdf.internal.pageSize.getHeight() - 1
-        //     );
-        //   }
-        // })
-        // .save();
+        //html2pdf().from(element).set(options).save();
       });
     </script>
   </body>
